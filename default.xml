@@ -2,14 +2,15 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="github"
+           fetch=".." />
+
   <default revision="jb-release"
            remote="aosp"
            sync-j="4" />
-
-   <remote name="github"
-          fetch=".." />
 
   <project path="build" name="platform/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
