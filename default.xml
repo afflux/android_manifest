@@ -2,8 +2,10 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+  <remote  name="github"
+           fetch=".." />
   <default revision="refs/tags/android-4.2_r1"
            remote="aosp"
            sync-j="4" />
@@ -19,8 +21,6 @@
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="development" name="platform/development" />
-  <project path="device/asus/grouper" name="device/asus/grouper" groups="device" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" />
   <project path="device/generic/armv7-a" name="device/generic/armv7-a" />
@@ -31,11 +31,6 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device" />
-  <project path="device/samsung/manta" name="device/samsung/manta" groups="device" />
-  <project path="device/samsung/toro" name="device/samsung/toro" groups="device" />
-  <project path="device/samsung/toroplus" name="device/samsung/toroplus" groups="device" />
-  <project path="device/samsung/tuna" name="device/samsung/tuna" groups="device" />
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
@@ -196,7 +191,7 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/base" name="afflux/android_frameworks_base" remote="github" revision="refs/tags/android-4.2_r1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" />
@@ -248,7 +243,7 @@
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
+  <project path="packages/apps/KeyChain" name="afflux/android_apps_KeyChain" remote="github" revision="refs/tags/android-4.2_r1" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
