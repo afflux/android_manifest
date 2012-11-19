@@ -243,7 +243,7 @@
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/KeyChain" name="afflux/android_apps_KeyChain" remote="github" revision="refs/tags/android-4.2_r1" />
+  <project path="packages/apps/KeyChain" name="afflux/android_apps_keychain" remote="github" revision="refs/tags/android-4.2_r1" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
